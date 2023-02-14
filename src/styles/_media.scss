@@ -1,0 +1,79 @@
+.block {
+    background-color: rgb(40, 145, 243);
+
+    margin-top: 50px;
+    height: 16rem;
+}
+
+.block__element {
+    position: absolute;
+    left: 50%;
+
+    margin-top: 7rem;
+
+    height: 60px;
+
+    animation-name: element-animation1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+.block__element_amin {
+    text-align: center;
+    background-color: rgb(82, 19, 19);
+    color: white;
+    height: 50px;
+    width: 100px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 0;
+    padding: 0;
+}
+
+.block__element_head {
+    background-color: rgb(235, 173, 41);
+    height: 10px;
+    width: 100px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+@keyframes element-animation1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    5% {
+        transform: rotate(-30deg);
+    }
+
+    10% {
+        transform: rotate(20deg);
+    }
+
+    15% {
+        transform: rotate(-15deg);
+    }
+
+    20% {
+        transform: rotate(15deg);
+    }
+
+    25% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
